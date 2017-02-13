@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Exoplanet Virtual Observatory | Science :: EVO </title>
+    <title>Exoplanet Virtual Observatory | The App :: EVO </title>
     <link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css'>
     <link href="css/slider.css" rel="stylesheet" type="text/css"  media="" />
@@ -40,8 +40,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           });
         });
     </script>
+
   </head>
+  
+  <style>
+    .mySlides1 {display:'None';}
+    .mySlides2 {display:'None';}
+    .mySlides3 {display:'None';}
+  </style>
+
   <body>
+
     <!---start-wrap---->
     <!---start-header---->
     <!----start--imageslider----->
@@ -69,9 +78,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="top-nav">
               <ul>
-                <li><a href="app.html">The App</a></li>
+                <li class="active"><a href="app.html">The App</a></li>
                 <li><a href="team.html">The Team</a></li>
-                <li class="active"><a href="science.html">Science</a></li>
+                <li><a href="science.html">Science</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -82,151 +91,84 @@ License URL: http://creativecommons.org/licenses/by/3.0/
           </div>
           <!----End-top-header----->
           <!---End-header---->
-          <script type="text/javascript">
-            $(document).ready(function(){
-              $(".menu_body").hide();
-              //toggle the componenet with class menu_body
-              $(".menu_head").click(function(){
-                $(this).next(".menu_body").slideToggle(600);
-                var plusmin;
-                plusmin = $(this).children(".plusminus").text();
-                if( plusmin == '+')
-                  $(this).children(".plusminus").text('-');
-                else
-                  $(this).children(".plusminus").text('+');
-              });
-            });
-          </script>
           <!---start-content---->
           <div class="content">
-            <!---start-cooking-tips----->
-            <div class="ctips">
-              <div class="tips-left">
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is a star?<span class="plusminus">+</span></h3>
-                    <div class="menu_body" style="display: none;">
-                      <p>A star is a sphere of gas that is being compressed so strongly by its own gravity, that nuclear fusion reactions are happening in its centre. Initially, hydrogen nuclei (single protons) are being forced together to form helium nuclei (two protons and two neutrons). Astronomers often refer to this as "hydrogen burning". These fusion reactions release energy that counters the star's self-gravity from collapsing indefinitely so that stars can live for millions or even billions of years. When gravity and nuclear fusion reaches such a detailed balance, it reaches a hydrostatic equlibrium.</p>
-                      <p>When a star runs out of hydrogen to burn at its core, it will try to burn higher elements to produce even heavier elements (eg. carbon, nitrogen, oxygen). If the star is massive enough, it can burn elements all the way down the periodic table to form as heavy as nickel, where the fusion process stops releasing energy, and the star ends its life as a supernova!</p>
-                    </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is an exoplanet?<span class="plusminus">+</span></h3>
-                    <div class="menu_body" style="display: none;">
-                      <p>An exoplanet (or extrasolar planet, to give it its full name) is a planet that does not orbit our star, the Sun.  These planets come in a variety of different types that we don't see in the Solar System.</p>
-                      <p>In the Solar System, planets come in three types: terrestrial planets like the Earth, Venus, Mars and Mercury; gas giants like Jupiter and Saturn; and ice giants like Uranus and Neptune.</p>
-                      <p>Exoplanets come in lots of different types:</p>
-                      <p>"Hot Jupiters", gas giants that orbit so close to their star they are heated to thousands of degrees;</p>
-                      <p>"Super Earths", terrestrial planets that are so big they have a second, smaller atmosphere of hydrogen and helium gas, like a tiny gas giant;</p>
-                      <p>"mini Neptunes", little ice giants not much bigger than the Earth;</p>
-                      <p>And loads more. We see planets being evaporated by their star, we see the remains of planets roiling on the surface of "dead" stars like white dwarfs.  We even see some planets that don't have a host star. These "free-floating" planets have been kicked out of their star system by another planet or a passing star, and now they roam the interstellar void.</p>
-                      <p>What sorts of exoplanets will you make?</p>
-                    </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">Information on stellar spectral type?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>The Harvard classification system extended to the brown dwarf regime contains the types O, B, A, F, G, K, M, L, T and Y. Please note that a spectral classification has more clear-cut on the temperature range for different classes, it is very often to have stars with similar masses showing very different spectra. This is more obvious in the lower temperature regime. For the brown dwarf classes, apart from the defining mass 0.075 solar masses where the mass depends strongly on the age of the object, so only temperature ranges are given.</p>
-                    <p>Main sequence classes</p>
-                    <p>O - A very massive hot star with at least 15 solar masses and surface temperature >30000K. It contributes to about 0.00003% of the main sequence stars.</p>
-                    <p>B - Stars with surface temperature 10000-30000K belong to this class, they have roughly 2-16 solar masses, contributing to 0.125% of all main sequence stars.</p>
-                    <p>A - Stars with surface temperature 7600-10000K and 1.4-2.1 solar masses. 0.625% of the main sequence stars belong to this class.</p>
-                    <p>F - This class of objects has the surface temperature between 6000K and 7600K and typical masses ranging 1.0-1.4 solar masses making up 3.033% of all main sequence stars.</p>
-                    <p>G - The Sun is a typical example of this class of objects. They have surface temperature 5300-6000K and 0.8-1.2 solar masses. 7.5% of the stellar population are made up of G stars.</p>
-                    <p>K - The temperature range of this class is 3900-5300K. These objects typically have 0.6-0.9 solar masses and sum up to give 12% of the star count.</p>
-                    <p>M - This is the most abundant type of main sequence stars with a surface temperature of 2300-4000K. The masses range from 0.075-0.5 solar masses, contributing to 76% of all main sequence stars. For comparison, the tungsten filament of a light bulb works at 2000-3300K.</p>
-                    <p>Brown dwarf classes</p>
-                    <p>M - Objects with class M can be a main sequence star or a brown dwarf, it depends on the mass of the object. To be classified as a brown dwarf, the object must be less than 0.075 solar masses and the surface temperature in the range of 2300-2600K.</p>
-                    <p>L - Surface temperatures of this class of object are between 1300 and 2400K.</p>
-                    <p>T - Objects with surface temperature 400-1300K go into this class.</p>
-                    <p>Y - This is the coolest class of objects where the surface temperatures are below 400K.</p>
-                  </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is a spectrum?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>A spectrum is what you get when you split the light from any source into its component colours. For a low-resolution solar spectrum look no further than a rainbow.</p>
-                  </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is a Doppler Shift?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>Doppler shifts are easiest to think about using sound. An observer will hear a change in pitch depending on whether a sound source is moving towards or away from them. Imagine the change in pitch of an aircraft as it flies overhead, the pitch is higher when approaching and gets lower as it flies away. These shifts also apply to sources of light meaning that objects moving towards you appear bluer and those moving away appear redder.  For example, distant galaxies are all 'red-shifted', a consequence of our expanding Universe. On Earth this effect is tiny which is why runners don't appear bluer when coming towards you, until they run out of breath.</p>
-                  </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is the Habitable Zone?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>A 'goldilocks' zone around a star. A planet like the Earth orbiting within the habitable zone would have a surface temperature that was neither too hot nor too cold to sustain liquid water on the surface. And yes, the Earth orbits within the Sun's habitable zone :)</p>
-                  </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What is an Orbit?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>An orbit is the path that a planet takes around a star. An orbit is elliptical in shape, and requires six numbers to be specified:</p>
-                    <p>[1] The semimajor axis,</p>
-                    <p>[2] The eccentricity,</p>
-                    <p>[3] The inclination,</p>
-                    <p>[4] The Longitude of the Ascending Node,</p>
-                    <p>[5] The Argument of Periapsis,</p>
-                    <p>[6] The Mean Anomaly</p>
-                    <p>In an elliptical orbit, the planet moves closer and further away from the star. The point of closest approach to the star is called the periapsis, and the point of furthest approach is called the apsis. The average distance between the star and the planet is the semimajor axis.</p>
-                    <p>The eccentricity of the orbit is a measure of how elliptical the orbit is. If the eccentricity is zero, the orbit is circular, and the planet and star keep the same distance from each other all the time. The inclination, longitude of the ascending node and argument of periapsis are three angles that define the orientation of the orbit relative to the x, y and z axes. The Mean Anomaly is an angle that describes where in the orbit the planet is, i.e. how far away from periapsis the planet is.</p>
-                  </div>
-                </div>
-                <div class="tips-left-grid">
-                  <h3 class="menu_head">What Makes a Planetary System Unstable?<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                    <p>Every body in a planetary system (star, planet, moon, asteroid, comet etc) has its own gravitational field. This means that the motion of any one of these bodies depends on all the gravitational fields in the system.  When there are only two bodies present, the orbits are stable, and we can write simple equations to predict the future positions of the bodies. When there are more than two, then we must use computer simulations to predict their positions, and the orbits can be unstable.</p>
-                    <p>In the solar system, Earth's orbit is continually being nudged and squeezed by Jupiter's gravitational field, as well as that of Saturn, Uranus, Neptune, and the terrestrial planets as well.</p>
-                    <p>If this nudging gets too strong, then the orbits of bodies get very close to each other.  Once the orbits get close enough to cross over, then the orbits of the planets become determined by each other, not the host star! This is why a planetary system can go unstable. When it does, typically a planet is kicked out of the system to become a free floating planet. Have you made any free floating planets yet?</p>
-                  </div>
-                </div>
+            <div class="top-grids-app">
+              <div class="top-grid">
+                <h3>Create Planetary Systems</h3>
+                <img src="images/screenshot6.png" title="Create Planetary Systems" width=100%/>
+                <a href="app.html#CreatePlanetarySystems">Read More</a>
               </div>
-              <div class="tips-right">
-                  <h3 class="menu_head">Checkpoint!<span class="plusminus">+</span></h3>
-                  <div class="menu_body" style="display: none;">
-                <p>If you don't want to read, here are the things you should know after using this app</p>
-                <ul>
-                  <li>Stars burn hydrogen to give out energy in the form of light at a variety of wavelengths.</li>
-                  <li>Planets form soon after the host star and orbit around it.</li>
-                  <li>There are planets orbiting stars that are not our Sun: we call them exoplanets.</li>
-                  <li>In the solar system, there are three types of planet: terrestrial, ice giant and gas giant.</li>
-                  <li>Outside the Solar System, there are many other types.</li>
-                  <li>Hot Jupiters are giant planets that orbit very close to the host star.</li>
-                  <li>Super Earths are terrestrial planets that can be 2 to 10 times as massive as Earth!</li>
-                  <li>Observing an exoplanet is very difficult but not impossible.</li>
-                  <li>You need to observe an object repeatedly for a long time to find a planet.</li>
-                  <li>The Radial Velocity (or Doppler Wobble) detection method relies on us being able to measure the star's motion as it is tugged by the planet's gravity</li>
-                  <li>Radial velocity of stars is measured by watching for Doppler Shifts in the spectrum
-                  <li>The Transit Method relies on us being able to see the planet pass in front of the star, and dim it slightly.</li>
-                  <li>Transit detections need very accurate measurements of a star's brightness</li>
-                </ul>
+              <div class="top-grid">
+                <h3>Observe Planetary Systems</h3>
+                <img src="images/screenshot11.png" title="Observe Planetary Systems" width=100%/>
+                <a href="app.html#ObservePlanetarySystems">Read More</a>
+              </div>
+              <div class="top-grid" id="last-grid">
+                <h3>Learn About The Science</h3>
+                <img src="images/spectrum.png" title="Learn About The Science" width=100%/>
+                <a href="app.html#LearnAboutTheScience">Read More</a>
               </div>
               <div class="clear"> </div>
-					<!--------
-					<div class="cooking-eq">
-						<h3>Golden Rules</h3>
-						<div class="eq-grid">
-							<span>Rule no. 1</span>
-							<p>???</p>
-						</div>
-						<div class="eq-grid">
-							<span>Rule no. 2</span>
-							<p>??????</p>
-						</div>
-						<div class="eq-grid last-grid">
-							<span>Rule no. 3</span>
-							<p>?????????</p>
-						</div>
-						<div class="clear"> </div>
-					</div> ------>
             </div>
             <div class="clear"> </div>
-            <!---End-cooking-tips----->
-            <!---End-content---->
+            <div class="mid-grids-app">
+              <div class="mid-grid-app-left">
+                <h3 id="CreatePlanetarySystems">Create Planetary Systems</h3>
+                <span>It might be harder than you think...</span>
+                <img class="mySlides1" src="images/screenshot2.png" width=100%/>
+                <img class="mySlides1" src="images/screenshot6.png" width=100%/>
+              </div>
+              <div class="mid-grid-app-right">
+                  <p></p>
+                  <p>It might be harder than you think to set up a system that is stable over long times with multiple planets. The simulator used in this app takes account of the gravity exerted by each body in the system. So, what happens to the orbits of the other planets when you remove Jupiter from the Solar System (one of the pre-made systems available to investigate)? What happens to smaller planets when a big planet is placed on a similar orbit? The app was set up so that you can learn the answers to these questions by playing with your own systems.</p>
+              </div>
+              <div class="clear"> </div>
+            </div>
+            <div class="mid-grids-app">
+              <div class="mid-grid-app-left">
+                <h3 id="ObservePlanetarySystems">Observe Planetary Systems</h3>
+                <span></span>
+                <img class="mySlides2" src="images/screenshot8.png" width=100%/>
+                <img class="mySlides2" src="images/screenshot9.png" width=100%/>
+                <img class="mySlides2" src="images/screenshot10.png" width=100%/>
+                <img class="mySlides2" src="images/screenshot11.png" width=100%/>
+              </div>
+              <div class="mid-grid-app-right">
+                  <p></p>
+                  <p>How to astronomers search for exoplanets? There has been a great step forwards in our understanding of how many other worlds there are in our Galaxy after the successful Kepler mission, but what types of planets get detected and how?</p>
+                  <p>In this app we show two methods that astronomers use to search for exoplanets; transits and radial velocities. The signals detected update in real time with the system displayed above, so you can tip and tilt the system and see how things change.</p>
+                  <span>RV</span>
+                  <p>We can actually search for signatures showing the star being flung around by the gravitational influence of the planets orbiting it.</p>
+                  <span>Transits</span>
+                  <p>We can also search for a dip in the star's light as it is partially obscured by the planet passing in front of it.</p>
+              </div>
+              <div class="clear"> </div>
+            </div>
+            <div class="mid-grids-app">
+              <div class="mid-grid-app-left">
+                <h3 id="LearnAboutTheScience">Learn About The Science</h3>
+                <span></span>
+                <img class="mySlides3" src="images/screenshot3.png" width:100%>
+                <img class="mySlides3" src="images/screenshot4.png" width:100%>
+                <img class="mySlides3" src="images/screenshot5.png" width:100%>
+                <img class="mySlides3" src="images/screenshot5b.png" width:100%>
+                <img class="mySlides3" src="images/screenshot7.png" width:100%>
+                <img class="mySlides3" src="images/screenshot12.png" width:100%>
+                <img class="mySlides3" src="images/screenshot13.png" width:100%>
+                <img class="mySlides3" src="images/screenshot14.png" width:100%>
+              </div>
+              <div class="mid-grid-app-right">
+                  <p></p>
+                  <p>How do the signatures in stellar spectra tell us that the star is wobbling? What do stellar spectra look like? What is a spectrum? How do we actually measure it? How do we categorize different types of stars? How can we tell whether a planet might be habitable?</p>
+                  <p>We are working to give insight into all these questions and more through short, easily digestible science cards.</p>
+              </div>
+              <div class="clear"> </div>
+            </div>
           </div>
-          <!---End-wrap---->
+        <!---End-content---->
         </div>
+      <!---End-wrap---->
       </div>
       <div class="footer">
         <div class="top-to-page">
@@ -236,6 +178,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <p>Design by <a href="http://w3layouts.com/">W3layouts</a></p>
       </div>
     </div>
+    <script>
+        var myIndex_a = 0;
+        var myIndex_b = 0;
+        var myIndex_c = 0;
+        carousel_a();
+        carousel_b();
+        carousel_c();
+        function carousel_a() {
+            var i;
+            var x = document.getElementsByClassName("mySlides1");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+        myIndex_a++;
+        if (myIndex_a > x.length) {myIndex_a = 1}   
+            x[myIndex_a-1].style.display = "block";  
+            setTimeout(carousel_a, 2000);    
+        }
+        function carousel_b() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+        myIndex_b++;
+        if (myIndex_b > x.length) {myIndex_b = 1}   
+            x[myIndex_b-1].style.display = "block";  
+            setTimeout(carousel_b, 2000);    
+        }
+        function carousel_c() {
+            var i;
+            var x = document.getElementsByClassName("mySlides3");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+        myIndex_c++;
+        if (myIndex_c > x.length) {myIndex_c = 1}   
+            x[myIndex_c-1].style.display = "block";  
+            setTimeout(carousel_c, 2000);    
+        }
+    </script>
   </body>
 </html>
 
